@@ -1,4 +1,13 @@
 .credit-card.credit-card-front {
     width: 85mm;
     height: 53mm;
+    border-radius: 3.18mm;
+    background-color: blue;
+}
+.credit-card.credit-card-back {
+    margin-top: 10mm;
+    width: 85mm;
+    height: 53mm;
+    border-radius: 3.18mm;
+    background-color: blue;
 }
