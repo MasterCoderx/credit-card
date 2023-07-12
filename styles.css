@@ -42,3 +42,16 @@
     background-color: black;
     margin-top: 5mm;
 }
+.credit-card.credit-card-back .information-wrapper .name  {
+    font-family: 'Fasthand', cursive;
+}
+.credit-card.credit-card-back .information-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 10mm;
+    background-color: silver;
+    margin-top: 5mm;
+    width: 50%;
+    margin-left: 4mm;
+    justify-content: space-evenly;
+}
