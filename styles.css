@@ -17,13 +17,15 @@
 .credit-card.credit-card-front > .number {
     font-size: x-large;
 }
-.credit-card.credit-card-front .information-wrapper:nth-child(1) {
-   column-fill: auto;
+.credit-card.credit-card-front > .information-wrapper:nth-child(1) {
+   text-transform: capitalize;
 }
 .credit-card.credit-card-front > .information-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    text-transform: uppercase;
+    word-wrap: break-word;
 }
 .credit-card.credit-card-back {
     margin-top: 10mm;
@@ -33,4 +35,10 @@
     background-color: blue;
     display: flex;
     flex-direction: column;
+}
+.magnetic-strip {
+    height: 10mm;
+    width: 100%;
+    background-color: black;
+    margin-top: 5mm;
 }
