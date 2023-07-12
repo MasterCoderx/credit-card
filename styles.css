@@ -1,8 +1,12 @@
+body {
+    font-family: sans-serif;
+    transform: scaleY();
+}
 .credit-card.credit-card-front {
     width: 85mm;
     height: 53mm;
     border-radius: 3.18mm;
-    background-color: blue;
+    background-color: #0063CF;
     line-height: 0.4;
     display: flex;
     flex-direction: column;
@@ -12,27 +16,35 @@
     margin-left: 8mm;
 }
 .credit-card.credit-card-front .name {
-    font-size: large;
+    font-size: 20px;
+    margin-top: 10px;
 }
 .credit-card.credit-card-front > .number {
-    font-size: x-large;
-}
-.credit-card.credit-card-front > .information-wrapper:nth-child(1) {
-   text-transform: capitalize;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 .credit-card.credit-card-front > .information-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     text-transform: uppercase;
-    word-wrap: break-word;
+    inline-size: 20mm;
+    line-height: 4mm;
+}
+.credit-card.credit-card-front .information-wrapper p:nth-child(2){
+    margin: 0 0 0 5px;
+    font-size: 20px;
+}
+.credit-card.credit-card-front .information-wrapper p:nth-child(1){
+    font-size: 10px;
 }
 .credit-card.credit-card-back {
     margin-top: 10mm;
     width: 85mm;
     height: 53mm;
     border-radius: 3.18mm;
-    background-color: blue;
+    background-color: #0063CF;
     display: flex;
     flex-direction: column;
 }
@@ -44,6 +56,15 @@
 }
 .credit-card.credit-card-back .information-wrapper .name  {
     font-family: 'Fasthand', cursive;
+    font-size: 20px;
+    margin: 2mm 0 2mm 2mm;
+}
+.credit-card.credit-card-back .information-wrapper .number  {
+    font-family: 'roboto', sans-serif;
+    transform: skew(-20deg);
+    font-size: 15px;
+    margin-right: 1px;
+    margin-top: 1px;
 }
 .credit-card.credit-card-back .information-wrapper {
     display: flex;
